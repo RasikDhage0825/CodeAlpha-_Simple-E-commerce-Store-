@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopwell — Shop</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/index.html" class="logo">Shop<span>well</span></a>
+    <nav class="nav-links">
+      <a href="/index.html">Shop</a>
+      <a href="/orders.html">My Orders</a>
+      <a href="/cart.html" class="cart-link">Cart<span id="cart-badge" class="cart-badge hidden">0</span></a>
+      <span id="auth-area"></span>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1 class="page-title">All Products</h1>
+  <p class="page-subtitle">Browse our full catalog and find something you'll love.</p>
+
+  <div class="toolbar">
+    <input type="text" id="search-input" placeholder="Search products...">
+    <select id="category-select">
+      <option value="">All categories</option>
+    </select>
+  </div>
+
+  <div id="product-grid" class="product-grid"></div>
+  <p id="empty-msg" class="empty-state hidden">No products match your search.</p>
+</main>
+
+<script src="/js/api.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

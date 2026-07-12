@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart — Shopwell</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/index.html" class="logo">Shop<span>well</span></a>
+    <nav class="nav-links">
+      <a href="/index.html">Shop</a>
+      <a href="/orders.html">My Orders</a>
+      <a href="/cart.html" class="cart-link">Cart<span id="cart-badge" class="cart-badge hidden">0</span></a>
+      <span id="auth-area"></span>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1 class="page-title">Your Cart</h1>
+  <div id="cart-container"></div>
+
+  <div id="checkout-panel" class="form-card hidden" style="margin-top:24px;">
+    <h1>Checkout</h1>
+    <div id="checkout-msg" class="error-msg"></div>
+    <div class="field">
+      <label for="address">Shipping address</label>
+      <textarea id="address" rows="3" placeholder="123 Main St, Springfield"></textarea>
+    </div>
+    <button id="place-order-btn" class="btn btn-accent btn-block">Place Order</button>
+  </div>
+</main>
+
+<script src="/js/api.js"></script>
+<script src="/js/cart.js"></script>
+</body>
+</html>
